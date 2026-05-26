@@ -1,0 +1,187 @@
+.stirfr-welcome-wrap {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1d2327;
+}
+.stirfr-hero {
+    position: relative;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-radius: 16px;
+    padding: 56px 40px 48px;
+    color: #fff;
+    overflow: hidden;
+}
+.stirfr-badge {
+    display: inline-block;
+    background: #22c55e;
+    color: #052e16;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+.stirfr-title {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    font-weight: 700;
+}
+.stirfr-gradient-text {
+    background: linear-gradient(90deg, #38bdf8, #22c55e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #fff0;
+}
+.stirfr-subtitle {
+    max-width: 680px;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.95;
+    margin-bottom: 28px;
+}
+.stirfr-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.stirfr-actions .button-hero {
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.stirfr-logo-pill {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgb(255 255 255 / 0.1);
+    padding: 8px 14px;
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
+    font-size: 13px;
+}
+.stirfr-logo-pill img {
+    width: 28px;
+    height: auto;
+    display: block;
+}
+.stirfr-ornament {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.stirfr-pulse {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgb(56 189 248 / 0.25), transparent 70%);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+    animation: stirfrPulse 6s infinite;
+}
+.stirfr-pulse.delay {
+    animation-delay: 3s;
+    top: auto;
+    bottom: -120px;
+    left: -120px;
+}
+@keyframes stirfrPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+.stirfr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+.stirfr-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 26px 24px;
+    box-shadow: 0 8px 30px rgb(0 0 0 / 0.06);
+}
+.stirfr-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.stirfr-card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+.stirfr-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+}
+.stirfr-steps {
+    margin-top: 56px;
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 36px;
+}
+.stirfr-steps h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+.stirfr-steps ol {
+    margin-left: 18px;
+    line-height: 1.8;
+}
+.stirfr-steps code {
+    background: #0f172a;
+    color: #38bdf8;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+.stirfr-note {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #475569;
+}
+.stirfr-footer {
+    margin-top: 40px;
+}
+.stirfr-meter {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+.stirfr-meter-bar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #38bdf8, #22c55e);
+}
+@media (max-width: 640px) {
+    .stirfr-title {
+        font-size: 30px;
+    }
+    .stirfr-logo-pill {
+        position: static;
+        margin-top: 24px;
+    }
+}
+.sti-hero {
+    position: relative;
+    overflow: visible;
+}
